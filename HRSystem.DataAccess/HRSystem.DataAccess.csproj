@@ -41,6 +41,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\Department.cs" />
+    <Compile Include="Entity\Employee.cs" />
+    <Compile Include="Entity\Position.cs" />
+    <Compile Include="Entity\Specialization.cs" />
+    <Compile Include="Entity\Technology.cs" />
+    <Compile Include="HRModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
