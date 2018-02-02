@@ -27,6 +27,7 @@ namespace HRSystem.DataAccess
             PositionConfig.Configure(modelBuilder);
             SpecializationConfig.Configure(modelBuilder);
             DepartmentConfig.Configure(modelBuilder);
+            TechnologyConfig.Configure(modelBuilder);
 
             base.OnModelCreating(modelBuilder);
         }
