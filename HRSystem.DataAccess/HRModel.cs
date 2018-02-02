@@ -25,6 +25,7 @@ namespace HRSystem.DataAccess
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             PositionConfig.Configure(modelBuilder);
+            SpecializationConfig.Configure(modelBuilder);
 
             base.OnModelCreating(modelBuilder);
         }
