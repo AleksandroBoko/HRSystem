@@ -51,17 +51,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfigurationModel\PositionConfig.cs" />
     <Compile Include="Entity\Department.cs" />
     <Compile Include="Entity\Employee.cs" />
     <Compile Include="Entity\Position.cs" />
     <Compile Include="Entity\Specialization.cs" />
     <Compile Include="Entity\Technology.cs" />
     <Compile Include="HRModel.cs" />
+    <Compile Include="Migrations\201802020738003_PositionTable.cs" />
+    <Compile Include="Migrations\201802020738003_PositionTable.Designer.cs">
+      <DependentUpon>201802020738003_PositionTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201802020738003_PositionTable.resx">
+      <DependentUpon>201802020738003_PositionTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,9 +1,9 @@
+using HRSystem.DataAccess.Entity;
+using HRSystem.DataAccess.ConfigurationModel;
+using System.Data.Entity;
+
 namespace HRSystem.DataAccess
 {
-    using System;
-    using System.Data.Entity;
-    using System.Linq;
-
     public class HRModel : DbContext
     {
         // Your context has been configured to use a 'HRModel' connection string from your application's 
@@ -20,12 +20,13 @@ namespace HRSystem.DataAccess
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
-        // public virtual DbSet<MyEntity> MyEntities { get; set; }
-    }
+        public virtual DbSet<Position> Positions { get; set; }
 
-    //public class MyEntity
-    //{
-    //    public int Id { get; set; }
-    //    public string Name { get; set; }
-    //}
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            PositionConfig.Configure(modelBuilder);
+
+            base.OnModelCreating(modelBuilder);
+        }
+    }
 }
