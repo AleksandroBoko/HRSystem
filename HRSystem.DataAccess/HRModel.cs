@@ -21,6 +21,10 @@ namespace HRSystem.DataAccess
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<Position> Positions { get; set; }
+        public virtual DbSet<Specialization> Specializations { get; set; }
+        public virtual DbSet<Department> Departments { get; set; }
+        public virtual DbSet<Technology> Technologies { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -28,6 +32,7 @@ namespace HRSystem.DataAccess
             SpecializationConfig.Configure(modelBuilder);
             DepartmentConfig.Configure(modelBuilder);
             TechnologyConfig.Configure(modelBuilder);
+            EmployeeConfig.Configure(modelBuilder);
 
             base.OnModelCreating(modelBuilder);
         }

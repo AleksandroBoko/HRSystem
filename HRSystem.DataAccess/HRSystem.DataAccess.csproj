@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigurationModel\DepartmentConfig.cs" />
+    <Compile Include="ConfigurationModel\EmployeeConfig.cs" />
     <Compile Include="ConfigurationModel\PositionConfig.cs" />
     <Compile Include="ConfigurationModel\SpecializationConfig.cs" />
     <Compile Include="ConfigurationModel\TechnologyConfig.cs" />
@@ -77,6 +78,10 @@
     <Compile Include="Migrations\201802020928307_TechnologyTable.Designer.cs">
       <DependentUpon>201802020928307_TechnologyTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802021110296_EmployeeTable.cs" />
+    <Compile Include="Migrations\201802021110296_EmployeeTable.Designer.cs">
+      <DependentUpon>201802021110296_EmployeeTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -96,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802020928307_TechnologyTable.resx">
       <DependentUpon>201802020928307_TechnologyTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802021110296_EmployeeTable.resx">
+      <DependentUpon>201802021110296_EmployeeTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

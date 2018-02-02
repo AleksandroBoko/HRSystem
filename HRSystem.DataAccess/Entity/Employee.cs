@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Linq;
+using System.Collections.Generic;
 
 namespace HRSystem.DataAccess.Entity
 {
@@ -22,6 +22,6 @@ namespace HRSystem.DataAccess.Entity
         public Guid SpecializationId { get; set; }
         public virtual Specialization EmpSpecialization { get; set; }
 
-        public virtual IQueryable<Technology> Technologies{ get; set; }
+        public virtual ICollection<Technology> Technologies{ get; set; }
     }
 }

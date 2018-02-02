@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Linq;
+using System.Collections.Generic;
 
 namespace HRSystem.DataAccess.Entity
 {
@@ -8,6 +8,6 @@ namespace HRSystem.DataAccess.Entity
         public Guid Id { get; set; }
         public string Name { get; set; }
 
-        public virtual IQueryable<Employee> Employess { get; set; }
+        public virtual ICollection<Employee> Employess { get; set; }
     }
 }
