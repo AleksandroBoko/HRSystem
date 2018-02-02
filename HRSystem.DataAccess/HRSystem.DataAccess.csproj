@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfigurationModel\DepartmentConfig.cs" />
     <Compile Include="ConfigurationModel\PositionConfig.cs" />
     <Compile Include="ConfigurationModel\SpecializationConfig.cs" />
     <Compile Include="Entity\Department.cs" />
@@ -67,6 +68,10 @@
     <Compile Include="Migrations\201802020856062_SpecializationTable.Designer.cs">
       <DependentUpon>201802020856062_SpecializationTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802020913098_DepartmentTable.cs" />
+    <Compile Include="Migrations\201802020913098_DepartmentTable.Designer.cs">
+      <DependentUpon>201802020913098_DepartmentTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -80,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802020856062_SpecializationTable.resx">
       <DependentUpon>201802020856062_SpecializationTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802020913098_DepartmentTable.resx">
+      <DependentUpon>201802020913098_DepartmentTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
