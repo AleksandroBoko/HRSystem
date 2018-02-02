@@ -54,12 +54,12 @@ namespace HRSystem.DataAccess.ConfigurationModel
 
             modelBuilder.Entity<Employee>()
                 .HasRequired(x => x.EmpSpecialization)
-                .WithMany(x => x.Employess)
+                .WithMany(x => x.Employees)
                 .HasForeignKey(x => x.SpecializationId);
 
             modelBuilder.Entity<Employee>()
                 .HasMany(x => x.Technologies)
-                .WithMany(x => x.Employess);
+                .WithMany(x => x.Employees);
 
         }
     }

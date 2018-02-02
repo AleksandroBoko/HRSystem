@@ -8,6 +8,6 @@ namespace HRSystem.DataAccess.Entity
         public Guid Id { get; set; }
         public string Name { get; set; }
 
-        public virtual ICollection<Employee> Employess { get; set; }
+        public virtual ICollection<Employee> Employees { get; set; }
     }
 }

@@ -82,6 +82,10 @@
     <Compile Include="Migrations\201802021110296_EmployeeTable.Designer.cs">
       <DependentUpon>201802021110296_EmployeeTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802021124408_ChangeFieldName.cs" />
+    <Compile Include="Migrations\201802021124408_ChangeFieldName.Designer.cs">
+      <DependentUpon>201802021124408_ChangeFieldName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -104,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802021110296_EmployeeTable.resx">
       <DependentUpon>201802021110296_EmployeeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802021124408_ChangeFieldName.resx">
+      <DependentUpon>201802021124408_ChangeFieldName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
