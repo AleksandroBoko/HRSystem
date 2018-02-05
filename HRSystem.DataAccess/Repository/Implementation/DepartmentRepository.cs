@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace HRSystem.DataAccess.Repository.Implementation
 {
-    class DepartmentRepository : IRepository<Department>
+    public class DepartmentRepository : IRepository<Department>
     {
         public DepartmentRepository()
         {
