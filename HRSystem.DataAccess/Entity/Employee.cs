@@ -23,5 +23,10 @@ namespace HRSystem.DataAccess.Entity
         public virtual Specialization EmpSpecialization { get; set; }
 
         public virtual ICollection<Technology> Technologies{ get; set; }
+
+        public Employee()
+        {
+            Id = Guid.NewGuid();
+        }
     }
 }
