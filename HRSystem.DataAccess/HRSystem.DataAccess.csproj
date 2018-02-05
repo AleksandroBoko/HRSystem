@@ -87,6 +87,7 @@
     <Compile Include="Repository\Implementation\DepartmentRepository.cs" />
     <Compile Include="Repository\Implementation\PositionRepository.cs" />
     <Compile Include="Repository\Implementation\SpecializationRepository.cs" />
+    <Compile Include="Repository\Implementation\TechnologyRepository.cs" />
     <Compile Include="Repository\IRepository.cs" />
   </ItemGroup>
   <ItemGroup>
