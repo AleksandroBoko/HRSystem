@@ -10,5 +10,10 @@ namespace HRSystem.DataAccess.Entity
         public string Description { get; set; }
 
         public virtual ICollection<Employee> Employees { get; set; }
+
+        public Technology()
+        {
+            Id = Guid.NewGuid();
+        }
     }
 }
