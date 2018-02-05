@@ -84,6 +84,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Implementation\DepartmentRepository.cs" />
     <Compile Include="Repository\Implementation\PositionRepository.cs" />
     <Compile Include="Repository\Implementation\SpecializationRepository.cs" />
     <Compile Include="Repository\IRepository.cs" />
