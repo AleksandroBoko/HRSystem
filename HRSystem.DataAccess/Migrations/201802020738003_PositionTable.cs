@@ -1,8 +1,7 @@
 namespace HRSystem.DataAccess.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class PositionTable : DbMigration
     {
         public override void Up()
@@ -11,7 +10,7 @@ namespace HRSystem.DataAccess.Migrations
                 "dbo.Position",
                 c => new
                     {
-                        Id = c.Guid(nullable: false, identity: true),
+                        Id = c.Guid(nullable: false, identity: true, defaultValueSql: "newsequentialid()"),
                         Name = c.String(nullable: false, maxLength: 200),
                     })
                 .PrimaryKey(t => t.Id);
