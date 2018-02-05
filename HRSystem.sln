@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRSystem.DataAccess", "HRSy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRSystem.Domain", "HRSystem.Domain\HRSystem.Domain.csproj", "{CFA0322E-D172-45C2-BE0E-FCE8BF521DC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRSystem.Services", "HRSystem.Services\HRSystem.Services.csproj", "{39DC359B-3C15-4B4E-8AFE-F64185B8D8C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRSystem.Service", "HRSystem.Services\HRSystem.Service.csproj", "{39DC359B-3C15-4B4E-8AFE-F64185B8D8C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
